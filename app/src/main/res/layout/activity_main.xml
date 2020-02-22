@@ -14,7 +14,8 @@
         android:layout_marginBottom="35dp"
         android:ems="10"
         android:hint="Enter Number"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/number2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +28,8 @@
         android:layout_marginBottom="30dp"
         android:ems="10"
         android:hint="Enter Number"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/number1"
         app:layout_constraintTop_toBottomOf="@+id/number1" />
@@ -39,7 +41,7 @@
         android:layout_marginBottom="128dp"
         android:text="Result : 5"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,24 +62,28 @@
             android:id="@+id/btnPlus"
             android:layout_width="49dp"
             android:layout_height="46dp"
+            android:onClick="plus"
             android:text="+" />
 
         <Button
             android:id="@+id/btnTimes "
             android:layout_width="49dp"
             android:layout_height="46dp"
+            android:onClick="times"
             android:text="x" />
 
         <Button
             android:id="@+id/btnMinus"
             android:layout_width="49dp"
             android:layout_height="46dp"
+            android:onClick="minus"
             android:text="-" />
 
         <Button
             android:id="@+id/btnDivided"
             android:layout_width="49dp"
             android:layout_height="46dp"
+            android:onClick="divided"
             android:text="/" />
     </LinearLayout>
 
